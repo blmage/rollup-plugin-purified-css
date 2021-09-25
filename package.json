@@ -1,0 +1,33 @@
+{
+  "name": "rollup-plugin-purified-css",
+  "description": "A Rollup plugin for bundling and tree-shaking imported CSS.",
+  "license": "MIT",
+  "author": "blmage",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=10.12.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "dependencies": {
+    "@rollup/pluginutils": "^4.0.0",
+    "purify-css": "git+https://github.com/blmage/rollup-purifycss.git#semver:^1.2.7-patch"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "eslint": "^7.31.0",
+    "eslint-plugin-jsdoc": "^36.1.0",
+    "rollup": "^2.56.3"
+  }
+}
