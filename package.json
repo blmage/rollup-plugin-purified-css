@@ -3,7 +3,7 @@
   "description": "A Rollup plugin for bundling and tree-shaking imported CSS.",
   "license": "MIT",
   "author": "blmage",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "build": "rollup -c",
     "prepare": "yarn build"
